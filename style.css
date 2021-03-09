@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box1 {
+  background-color: lightcoral;
+}
+
+.box2 {
+  background-color: lightblue;
+}
+
+.box3 {
+  background-color: lightgreen;
+}
+
+main {
+  display: grid;
+}
