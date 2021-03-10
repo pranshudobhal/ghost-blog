@@ -5,15 +5,18 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
-  /* , Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif; */
-  /* font-family: Georgia,serif; for paras*/
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
 }
+
+/* navigation start */
 
 nav {
   border: 1px solid black;
   background-color: #0a0b0c;
   color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .nav-container {
@@ -47,6 +50,7 @@ nav {
   color: #fff;
   opacity: 0.8;
   transition: all 0.35s ease-in-out;
+  font-weight: 500;
 }
 
 .nav-links-list li a:hover {
@@ -92,6 +96,10 @@ svg:hover {
   opacity: 1;
 }
 
+/* navigation end */
+
+/* header start */
+
 header {
   background-color: #0a0b0c;
   color: #fff;
@@ -117,6 +125,10 @@ header {
   font-weight: 300;
 }
 
+/* header end  */
+
+/* main start */
+
 main {
   background-color: #1a1c20;
 }
@@ -125,79 +137,187 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr;
-  height: 100vh;
   width: 70vw;
   margin: 0 auto;
-  gap: 2rem;
+  gap: 3rem;
+  padding-top: 3rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
 }
 
 .box1 {
-  /* background-color: lightcoral; */
   grid-column: 1/4;
-  display: flex;
   justify-content: space-between;
+  flex-direction: row;
+  gap: 2rem;
 }
 
 .box1-image {
   display: flex;
+  width: 48vw;
+  opacity: 0.9;
 }
 
 .box1-image img {
-  min-height: 380px;
+  max-height: 380px;
   flex: 1 1 auto;
   width: 100%;
+  border-radius: 5px;
 }
 
 .box1-content {
-  /* background-color: lightsteelblue; */
   display: flex;
-  flex-basis: ;
   flex-direction: column;
-  width: min-content;
+  flex: 0 1 361px;
+  padding-left: 2rem;
+  justify-content: center;
 }
 
 .box1-content h5 {
   color: #3eb0ef;
   text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  margin-top: -2rem;
 }
 
 .box1-content h1 {
   color: #fff;
   opacity: 0.85;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .box1-content p {
   font-family: Georgia, serif;
   color: #90a2aa;
+  font-size: 1.125rem;
+  line-height: 1.5em;
+  margin-top: 1rem;
+  padding-right: 1.15rem;
 }
 
 .description {
   display: flex;
   flex: 0 1 auto;
+  margin-top: 2rem;
 }
 
 .desc-image img {
   height: 2rem;
+  border-radius: 50%;
 }
 
 .desc-content {
   display: flex;
   flex-direction: column;
+  letter-spacing: 0.2px;
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
 }
 
 .desc-content .desc-content-title {
   color: #fff;
   opacity: 0.75;
+  font-weight: 600;
+}
+
+.desc-content .desc-content-title:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 .desc-content .desc-content-para {
   color: #90a2aa;
+  font-weight: 400;
+}
+
+.desc-content .desc-content-para .bull {
+  margin: 0 4px;
+  opacity: 0.6;
 }
 
 .box2 {
-  background-color: lightskyblue;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.box2-image img {
+  max-height: 380px;
+  flex: 1 1 auto;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.box2-image {
+  display: flex;
+  opacity: 0.9;
+}
+
+.box2-image img {
+  max-height: 380px;
+  flex: 1 1 auto;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 auto;
+  margin-top: -1rem;
+}
+
+h5 {
+  color: #3eb0ef;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  margin-top: 2rem;
+  font-size: 0.75rem;
+}
+
+h1 {
+  color: #fff;
+  opacity: 0.85;
+  font-size: 1.375rem;
+  font-weight: 600;
+}
+
+p {
+  font-family: Georgia, serif;
+  color: #90a2aa;
+  font-size: 1rem;
+  line-height: 1.5em;
+  margin-top: 1rem;
+  padding-right: 1.15rem;
 }
 
 .box3 {
-  background-color: lightgreen;
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
+
+.box3-image img {
+  max-height: 380px;
+  flex: 1 1 auto;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.box4 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.box4-image img {
+  max-height: 380px;
+  flex: 1 1 auto;
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* main end */
