@@ -136,13 +136,14 @@ main {
 .main-container {
   display: grid;
   grid-template-areas:
-    'box1 box1 box1'
-    'box2 box3 box4'
-    'box5 . box6';
+    'box1 box1 box1 box1 box1 box1'
+    'box2 box2 box3 box3 box4 box4'
+    'box5 box5 box5 box6 box6 box6';
   width: 70vw;
   margin: 0 auto;
-  gap: 3rem;
+  gap: 5rem 3rem;
   padding-top: 3rem;
+  padding-bottom: 8rem;
 }
 
 .box {
@@ -168,6 +169,7 @@ main {
   flex: 1 1 auto;
   width: 100%;
   border-radius: 5px;
+  object-fit: cover;
 }
 
 .box1-content {
@@ -183,7 +185,7 @@ main {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.2px;
-  margin-top: -2rem;
+  margin-top: 0rem;
 }
 
 .box1-content h1 {
@@ -251,6 +253,7 @@ main {
   flex: 1 1 auto;
   width: 100%;
   border-radius: 5px;
+  object-fit: cover;
 }
 
 .box2-image {
@@ -306,6 +309,7 @@ p {
   flex: 1 1 auto;
   width: 100%;
   border-radius: 5px;
+  object-fit: cover;
 }
 
 .box4 {
@@ -317,14 +321,88 @@ p {
   flex: 1 1 auto;
   width: 100%;
   border-radius: 5px;
+  object-fit: cover;
 }
 
 .box5 {
   grid-area: box5;
 }
 
+.box5-image img {
+  max-height: 200px;
+  flex: 1 1 auto;
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
 .box6 {
   grid-area: box6;
 }
 
+.box6-image img {
+  max-height: 200px;
+  flex: 1 1 auto;
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
 /* main end */
+
+/* footer start */
+
+footer {
+  background-color: #0a0b0c;
+}
+
+.footer-container {
+  width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 1.5rem 0 4rem;
+  font-size: 0.8rem;
+}
+
+.footer-container .site-logo {
+  opacity: 0.7;
+}
+
+.footer-social-links {
+  display: flex;
+  list-style-type: none;
+}
+
+.footer-social-links li {
+  position: relative;
+  padding-left: 1.15rem;
+}
+
+.footer-social-links li::before {
+  content: '';
+  position: absolute;
+  border-radius: 10px;
+  background-color: #fff;
+  left: 8px;
+  top: 6px;
+  width: 3px;
+  height: 3px;
+}
+
+.footer-social-links li:first-of-type::before {
+  display: none;
+}
+
+.footer-social-links li a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.footer-social-links li a:hover {
+  opacity: 1;
+}
+
+/* footer end */
