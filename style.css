@@ -82,6 +82,7 @@ svg:hover {
 }
 
 .nav-social-link button {
+  outline: 0;
   background-color: #0a0b0c;
   color: #fff;
   padding: 0.25rem 0.5rem;
