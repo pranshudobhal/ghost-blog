@@ -1,0 +1,28 @@
+/* header start */
+
+header {
+  background-color: #0a0b0c;
+  color: #fff;
+}
+
+.header-container {
+  width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 5vw 3vw 6vw;
+}
+
+.header-img img {
+  max-height: 55px;
+  opacity: 0.9;
+}
+
+.header-text {
+  font-size: 1.35rem;
+  opacity: 0.8;
+  font-weight: 300;
+}
+
+/* header end  */
