@@ -194,6 +194,7 @@ main {
   opacity: 0.85;
   font-size: 2rem;
   font-weight: 600;
+  flex: 0 1;
 }
 
 .box1-content p {
@@ -203,6 +204,7 @@ main {
   line-height: 1.5em;
   margin-top: 1rem;
   padding-right: 1.15rem;
+  flex: 0 1;
 }
 
 .description {
